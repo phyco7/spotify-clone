@@ -1,0 +1,614 @@
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* color: white; */
+}
+
+html,
+body {
+    /* width: 100%; */
+    /* height: 100%; */
+    overflow: hidden;
+    background-color: #000000;
+    color: white;
+}
+
+header {
+    position: fixed;
+    width: 68vw;
+    z-index: 1;
+}
+
+.mainFile {
+    margin-top: 60px;
+}
+
+.search {
+    filter: invert(1);
+}
+
+.home {
+    filter: invert(1);
+}
+
+.libri {
+    filter: invert(1);
+}
+
+.hambar {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+
+
+}
+
+.close {
+    display: none;
+}
+
+/* .leftFirst {
+    width: 30vw;
+    background-color: #121212;
+    height: 25vh;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    /* filter: invert(12); */
+/* } */
+.information {
+    width: 30vw;
+    background-color: #121212;
+    height: 25vh;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.information ul li {
+    list-style: none;
+    /* color: white; */
+    width: 100px;
+    height: 25px;
+    display: flex;
+    gap: 5px;
+    /* filter: invert(1); */
+    padding: 21px;
+}
+
+
+.logo {
+    filter: invert(1);
+    width: 100px;
+    height: 25px;
+    margin: 0px 22px;
+}
+
+
+.aside {
+    /* margin-top: 70px; */
+    /* display: flex; */
+    width: 30%;
+    color: white;
+    background-color: #121212;
+    height: 75vh;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+}
+
+.info {
+    width: 100%;
+    filter: invert();
+}
+
+.aside .firstul li {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    color: white;
+    /* filter: invert(1); */
+}
+
+.aside .firstul {
+    height: 40px;
+}
+
+.aside .plus {
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    right: 10px;
+    top: 5px;
+    filter: invert(1);
+    /* color: #ffffff; */
+}
+
+.songlist>* {
+    filter: invert(1);
+    margin: 10px;
+    width: 100%;
+
+    /* background-color: rgb(255, 255, 255);  */
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.songlist ul {
+    padding: 0;
+    margin: 0;
+    margin: 5px 0px;
+    overflow-x: hidden;
+}
+
+.songlist img {
+    filter: invert(1);
+}
+
+.songlist ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    list-style-type: decimal;
+    width: 90%;
+    height: 55px;
+    margin: 11px;
+    padding: 10px;
+    font-size: 12px;
+    /* color: rgb(2, 2, 2); */
+    filter: invert(1);
+    padding: 5px;
+    cursor: pointer;
+    /* overflow-x: hidden; */
+    color: rgb(0, 0, 0);
+}
+
+.right {
+    width: 67vw;
+    height: 85vh;
+    color: white;
+    background-color: #121212;
+    overflow: hidden;
+    overflow-y: auto;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.right::-webkit-scrollbar {
+    width: 5px;
+    /* Set the width of the scrollbar */
+    background-color: #000;
+    /* Black background */
+}
+
+.right::-webkit-scrollbar-thumb {
+    background-color: #666;
+    /* Color of the scrollbar thumb */
+    border-radius: 5px;
+    /* Rounded corners for the thumb */
+}
+
+.navii {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    position: static;
+    background-color: black;
+}
+
+.icon {
+    padding: 5px;
+    filter: invert(1);
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    margin: 0px 5px;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: #121212;
+    color: #a7a7a7;
+}
+
+.btn1:hover {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.btn2:hover {
+    font-weight: 600;
+}
+
+.linkbtn {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    filter: invert(1);
+    width: 30vw;
+    height: 40px;
+    bottom: 30px;
+    left: 0px;
+}
+
+
+.linkbtn a {
+    text-decoration: none;
+    display: flex;
+    padding: 5px;
+    color: #000000;
+    font-size: 14px;
+}
+
+.linkbtn a:hover {
+    font-size: 15px;
+}
+
+
+.card {
+    width: 186px;
+    height: 270px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #282828;
+    position: relative;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #050807;
+}
+
+.card img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: none;
+}
+
+.card:hover .play-button {
+    display: block;
+}
+
+.play-button svg {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.card h2 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.mainFile,
+h1 {
+    padding: 10px;
+}
+
+.maincontainer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    height: 67vh;
+    width: 100%;
+
+}
+
+
+.songsplay {
+    width: 60%;
+    height: 50px;
+    background-color: rgb(196 180 180);
+    position: fixed;
+    border-radius: 10px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* gap: -10px; */
+}
+
+.line {
+    width: 97%;
+    height: 10px;
+    position: absolute;
+    bottom: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.circal {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+/* Audio Play Button */
+.audio-play-button {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.audio-play-button path {
+    fill: #ffffff;
+}
+
+/* Right Arrow */
+.right-arrow {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    cursor: pointer;
+
+}
+
+.right-arrow path {
+    fill: #ffffff;
+}
+
+/* Left Arrow */
+.left-arrow {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    cursor: pointer;
+
+}
+
+.left-arrow path {
+    fill: #ffffff;
+}
+
+.abovebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.songinfo {
+    width: 40%;
+    padding: 0px 14px;
+    font-size: 14px;
+}
+
+.picket {
+    display: flex;
+    gap: 16px;
+
+}
+
+.range-chack {
+    width: 100px;
+    /* Set the desired width */
+    height: 20px;
+    /* Set the desired height */
+    cursor: pointer;
+}
+.vulume  img{
+
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.vulume{
+    display: flex;
+}
+@media (max-width: 850px) {
+    .leftFirst {
+        position: absolute;
+        left: -130%;
+        transition: all .3s;
+        z-index: 3;
+        width: 300px;
+        background-color: black;
+        padding: 0;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+    }
+
+    .aside {
+        width: 97%;
+    }
+
+    .information {
+        width: 97%;
+    }
+
+    .songlist ul li {
+
+
+
+        width: 90%;
+        height: 40px;
+        margin: 11px;
+        padding: 25px;
+        font-size: 10px;
+        /* color: rgb(2, 2, 2); */
+        filter: invert(1);
+        /* padding: 10px; */
+
+    }
+
+    .linkbtn {
+        position: static;
+        /* display: grid; */
+        flex-wrap: nowrap;
+        /* justify-content: center; */
+        align-items: self-start;
+        /* filter: invert(1); */
+        width: 100%;
+
+    }
+
+
+    .linkbtn a {
+
+        font-size: 10px;
+    }
+
+    .right {
+        width: 100%;
+        /* background-color: aqua; */
+    }
+
+    .hambar {
+        display: block;
+        width: 20px;
+        filter: invert(1);
+        cursor: pointer;
+    }
+
+    .songsplay {
+
+        width: 100%;
+        height: 82px;
+        display: flex;
+        position: absolute;
+        left: 0px;
+        bottom: 20px;
+    }
+
+    .abovebar {
+        width: 100%;
+    }
+
+    .songinfo {
+        font-size: 10px;
+    }
+
+    /* here we write the close btn  */
+    .close {
+        display: block;
+        filter: invert(1);
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    /* here we change the main container btn */
+    .btn {
+        padding: 5px 10px;
+        margin: 0px 0px;
+        font-size: 10px;
+
+
+    }
+
+    .btn1 {
+        background-color: #121212;
+        color: #a7a7a7;
+    }
+
+    .btn1:hover {
+        font-size: 12px;
+        /* color: #ffffff; */
+    }
+
+    .icon2 {
+        width: 15px;
+        height: 12px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        /* background-color: #000000; */
+        /* justify-content: space-between; */
+    }
+
+    .navii {
+        background-color: rgb(196 180 180);
+        position: fixed;
+        width: 100vw;
+    }
+
+    .small {
+        width: 20px;
+        height: 20px;
+    }
+
+    .timeduration {
+        font-size: 10px;
+        margin: 5px;
+
+    }
+
+    .maincontainer {
+        justify-content: center;
+    }
+
+    .card {
+        /* width: 100%; */
+        /* margin: 20px; */
+    }
+
+    .right {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .abovebar {
+        width: 100%;
+        flex-direction: column;
+        height: 10vh;
+    }
+
+    .songinfo {
+        width: 100%;
+    }
+
+    .songsplay {
+        height: 118px;
+    }
+}
